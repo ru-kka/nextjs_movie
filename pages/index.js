@@ -1,12 +1,14 @@
 import Seo from "../components/Seo";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 export default function Home({ results }) {
+
   const router = useRouter();
   const onClick = (id, title) => {
     router.push(`/movies/${title}/${id}`);
+
   };
 
   return (
